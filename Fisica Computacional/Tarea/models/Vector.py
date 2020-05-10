@@ -85,6 +85,19 @@ class Vector:
         return self.__value__
 
     @property
+    def x(self):
+        return self.__value__.__x__
+
+    @property
+    def z(self):
+        return self.__value__.__z__
+
+    @property
+    def y(self):
+        return self.__value__.__y__
+
+
+    @property
     def length(self):
         return float(math.sqrt(self.value.x ** 2 + self.value.y ** 2 + self.value.z ** 2))
 
