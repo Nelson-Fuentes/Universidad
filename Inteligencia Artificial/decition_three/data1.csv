@@ -1,0 +1,15 @@
+Ej,Cielo,Temperatura,Humedad,Viento,Clase
+D1,Sol,Alta,Alta,D´ebil,-
+D2,Sol,Alta,Alta,Fuerte,-
+D3,Nubes,Alta,Alta,D´ebil,+
+D4,Lluvia,Suave,Alta,D´ebil,+
+D5,Lluvia,Baja,Normal,D´ebil,+
+D6,Lluvia,Baja,Normal,Fuerte,-
+D7,Nubes,Baja,Normal,Fuerte,+
+D8,Sol,Suave,Alta,D´ebil,-
+D9,Sol,Baja,Normal,D´ebil,+
+D10,Lluvia,Suave,Normal,D´ebil,+
+D11,Sol,Suave,Normal,Fuerte,+
+D12,Nubes,Suave,Alta,Fuerte,+
+D13,Nubes,Alta,Normal,D´ebil,+
+D14,Lluvia,Suave,Alta,Fuerte,-
