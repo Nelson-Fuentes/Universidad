@@ -1,4 +1,4 @@
-   	A 	B 	C 	D 	E 	F 	G
+   	A	B 	C 	D 	E 	F 	G
 A  	0
 B	2.15	0
 C 	0.7	1.53 	0
