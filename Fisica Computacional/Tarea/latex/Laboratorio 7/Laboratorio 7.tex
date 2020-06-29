@@ -676,16 +676,15 @@ Campo gravitatorio generado en (0.5, -0.87) con una fuerza de: -1.5
     \end{center}
     { \hspace*{\fill} \\}
     
-    \hypertarget{encuentre-para-10-cargas-ubicadas-en-un-una-recta-de-lado-a-1}{%
-\subsection{Encuentre para 10 cargas ubicadas en un una recta de lado a
-=
-1}\label{encuentre-para-10-cargas-ubicadas-en-un-una-recta-de-lado-a-1}}
+    \hypertarget{encuentre-para-5-cargas-ubicadas-en-un-una-recta-de-lado-a-1}{%
+\subsection{Encuentre para 5 cargas ubicadas en un una recta de lado a =
+1}\label{encuentre-para-5-cargas-ubicadas-en-un-una-recta-de-lado-a-1}}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{16}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{}field\PYZus{}charges = [ 10 , 10 , 10 , 10 , 10, 10 , 10 , 10 , 10 , 10]}
-\PY{n}{field\PYZus{}charges} \PY{o}{=} \PY{p}{[} \PY{l+m+mi}{5}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{,}\PY{l+m+mi}{5} \PY{p}{]}
+\PY{n}{field\PYZus{}charges} \PY{o}{=} \PY{p}{[} \PY{l+m+mf}{0.5} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)} \PY{p}{]}
 \PY{n}{fields} \PY{o}{=} \PY{p}{[}\PY{p}{]}
 \PY{k}{for} \PY{n}{i} \PY{p}{,} \PY{n}{field\PYZus{}charge} \PY{o+ow}{in} \PY{n+nb}{enumerate}\PY{p}{(}\PY{n}{field\PYZus{}charges}\PY{p}{)}\PY{p}{:}
     \PY{n}{fields}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{p}{[} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{n}{i}\PY{o}{*}\PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{field\PYZus{}charge}  \PY{p}{]}\PY{p}{)}
@@ -712,7 +711,7 @@ Campo gravitatorio generado en (0.5, -0.87) con una fuerza de: -1.5
 \PY{n}{ax}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{p}{)}
 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}aspect}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{equal}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 \PY{n}{ax}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{xs}\PY{p}{,} \PY{n}{ys}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{o}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{ax}\PY{o}{.}\PY{n}{set}\PY{p}{(}\PY{n}{ylim}\PY{o}{=}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
+\PY{n}{ax}\PY{o}{.}\PY{n}{set}\PY{p}{(}\PY{n}{ylim}\PY{o}{=}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{n}{xlim}\PY{o}{=}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{)}\PY{p}{)}
 \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
@@ -738,7 +737,7 @@ Campo gravitatorio generado en (0.5, -0.87) con una fuerza de: -1.5
 
 \PY{n}{fig}\PY{p}{,} \PY{n}{ax}  \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{9}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
 \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{111}\PY{p}{,} \PY{n}{projection}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{3d}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{facecolor}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{white}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{ax}\PY{o}{.}\PY{n}{set}\PY{p}{(}\PY{n}{zlabel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Potencial}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{zlim} \PY{o}{=}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{50}\PY{p}{)} \PY{p}{)}
+\PY{n}{ax}\PY{o}{.}\PY{n}{set}\PY{p}{(}\PY{n}{zlabel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Potencial}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{zlim} \PY{o}{=}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
 \PY{n}{surf} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{plot\PYZus{}surface}\PY{p}{(}\PY{n}{axis}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{n}{potential}\PY{p}{)}
 \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
